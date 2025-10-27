@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "studio": "npx prisma studio"
+    "studio": "npx prisma studio",
+    "start": "node server.js"
   },
   "keywords": [
     "nodejs",
@@ -14,20 +15,32 @@
     "api",
     "backend"
   ],
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "author": "Boehm",
   "license": "MIT",
   "description": "Atividade backend com banco de dados",
   "dependencies": {
-    "@prisma/client": "^6.16.3",
+    "@prisma/client": "^6.18.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "nodemon": "^3.1.10",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
-    "prisma": "^6.16.3",
+    "prisma": "^6.18.0",
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
     "sequelize-cli": "^6.6.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vboehm09/atividade-back-com-bd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vboehm09/atividade-back-com-bd/issues"
+  },
+  "homepage": "https://github.com/vboehm09/atividade-back-com-bd#readme"
 }
