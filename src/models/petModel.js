@@ -23,7 +23,7 @@ export const findById = async (id) => {
 }   
 
 export const criar = async (data) => {
-    return await prisma.pets.create({
+    return await prisma.pet.create({
         data: {
             nome: data.nome,
             especie: data.especie,
@@ -34,8 +34,8 @@ export const criar = async (data) => {
     })
 }
 
-export const deleteBruxo = async (id) => {
-    return await prisma.bruxo.delete({
+export const deletePet = async (id) => {
+    return await prisma.pet.delete({
         where: { id: Number(id) }
     })
 }

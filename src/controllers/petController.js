@@ -44,7 +44,7 @@ export const listarUm = async (req, res) => {
             })
         }
 
-        res.status(200)({
+        res.status(200).json ({
             message: 'pet encontrado',
             pet
         })
@@ -86,7 +86,7 @@ export const criar = async (req, res) => {
     }
   };
 
-  export const apagar = async (req, res) => {
+export const apagar = async (req, res) => {
     try {
         const id = parseInt(req.params.id)
 

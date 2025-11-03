@@ -10,7 +10,7 @@ router.get("/:id", PetController.listarUm)
 //Rota Create
 router.post("/", PetController.criar);
 //Rota Delete
-router.delete("/id", PetController.apagar)
+router.delete("/:id", PetController.apagar)
 //Rota Update
 router.put("/:id", PetController.atualizar)
 
